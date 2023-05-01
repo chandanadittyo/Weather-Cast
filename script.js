@@ -1,5 +1,14 @@
 import { background } from "./data.js";
 
+const searchbar = document.getElementById("search-box");
+
+// Add event listener for "Enter" key press
+searchbar.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Add event listener for "Enter" key press
+    locationName();
+  }
+});
 export function locationName() {
   let searchBox = document.getElementById("search-box").value;
 
