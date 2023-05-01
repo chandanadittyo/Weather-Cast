@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 91.2044,
+    "lat": 23.4578
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 34.02,
+    "feels_like": 32.83,
+    "temp_min": 34.02,
+    "temp_max": 34.02,
+    "pressure": 1004,
+    "humidity": 27,
+    "sea_level": 1004,
+    "grnd_level": 1003
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.4,
+    "deg": 312,
+    "gust": 2.89
+  },
+  "clouds": {
+    "all": 74
+  },
+  "dt": 1682840218,
+  "sys": {
+    "type": 1,
+    "id": 9107,
+    "country": "BD",
+    "sunrise": 1682810558,
+    "sunset": 1682857326
+  },
+  "timezone": 21600,
+  "id": 1185186,
+  "name": "Comilla",
+  "cod": 200
+}

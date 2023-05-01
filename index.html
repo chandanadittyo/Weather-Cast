@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather Cast</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="/data.js"></script>
+    <script type="module" src="/script.js"></script>
+    <script type="module">
+        import { locationName } from './script.js';
+        window.locationName = locationName;
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="search-box" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append ml-2">
+
+                    <button type="button" class="btn btn-danger" onclick="locationName()"
+                        id="search-button">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" src="" alt="">
+            <h1 id="city-name"></h1>
+            <h3><span id="temperature"></span> <span id="parameter"></span></h3>
+            <h3 id="feels_like"></h3>
+            <h3 id="humidity"></h3>
+            <h2 class="lead" id="lead"></h2>
+        </div>
+    </div>
+</body>
+
+</html>
